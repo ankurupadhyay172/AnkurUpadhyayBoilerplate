@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.ankurupadhyay.myboilerplate.utils.SingleLiveDataEvent
 
-class BaseViewModel: ViewModel() {
+open class BaseViewModel: ViewModel() {
     private var loading:MutableLiveData<SingleLiveDataEvent<Boolean>> = MutableLiveData()
 
     fun getLoading() = loading
